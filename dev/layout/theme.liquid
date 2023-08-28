@@ -1,0 +1,16 @@
+<html>
+  <head>
+    {{ content_for_header }}
+    <!--<script src="https://cdn.tailwindcss.com"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>-->
+    <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />-->
+    {{ 'style.css' | asset_url | stylesheet_tag }}
+  {{ 'scripts.js' | asset_url | script_tag }}
+  </head>
+    <body>
+    {% render 'header' %}
+  {{ content_for_layout }}
+
+
+
+</body></html>
